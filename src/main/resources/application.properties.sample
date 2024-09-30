@@ -1,0 +1,11 @@
+spring.application.name=rag_app_java
+server.port=8080
+
+# Exclude JDBC Auto Configuration (if you don't need a database)
+spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+# Spring AI OpenAI Configuration
+spring.ai.openai.api-key= <NVIDA-KEY-HERE>
+spring.ai.openai.base-url=https://integrate.api.nvidia.com
+spring.ai.openai.chat.options.model=meta/llama-3.2-3b-instruct
+spring.ai.openai.max-tokens=1024

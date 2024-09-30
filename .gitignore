@@ -32,3 +32,4 @@ build/
 ### VS Code ###
 .vscode/
 key.txt
+src/main/resources/application.properties
