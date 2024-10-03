@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chat-container {
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#chat-area {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+
+#userInput {
+    width: 80%;
+    padding: 10px;
+}
+
+#sendButton {
+    width: 18%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.message {
+    display: flex;                /* Flexbox to align avatar and message */
+    align-items: center;          /* Center vertically */
+    margin-bottom: 10px;          /* Space between messages */
+}
+
+.message p {
+    background-color: #e1e1e1;    /* Background for message bubble */
+    border-radius: 5px;           /* Rounded corners */
+    padding: 10px;                /* Padding inside the message bubble */
+    margin: 0;
+    max-width: 75%;               /* Limit width of the message bubble */
+}
+
+.avatar {
+    width: 40px;                  /* Width of avatar */
+    height: 40px;                 /* Height of avatar */
+    border-radius: 50%;           /* Make avatar round */
+    margin-right: 10px;           /* Space between avatar and message */
+}

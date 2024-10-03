@@ -7,12 +7,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Map;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:3000") // Allow requests from the frontend origin
 public class ChatController {
 
     @Autowired
     private ChatService chatService;
 
-    @GetMapping("/api/chat")
+    @GetMapping("/chat")
     public Map<String, String> getCompletion(
             @RequestParam(value = "message", defaultValue = "Tell me a joke") String message) {
         // Correctly reference chatService (the instance) instead of ChatService (the
